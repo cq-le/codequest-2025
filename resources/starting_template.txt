@@ -1,0 +1,18 @@
+import sys
+
+def process(text):
+    if "red" in text:
+        print("red")
+    elif "blue" in text:
+        print("blue")
+    else:
+        print("no color found")
+
+def main():
+    cases = int(sys.stdin.readline().rstrip())
+    for caseNum in range(cases):
+        data = sys.stdin.readline().rstrip()
+        process(data)
+
+if __name__ == "__main__":
+    main()

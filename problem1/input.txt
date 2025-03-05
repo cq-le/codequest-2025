@@ -1,0 +1,7 @@
+5 
+This is a line of text that contains no colors 
+blue is my favorite color 
+I do not like the color red 
+This is a secret message, code red 
+A color that exists is BLUE! 
+ 
