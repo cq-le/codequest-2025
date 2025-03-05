@@ -9,7 +9,7 @@ from itertools import groupby, combinations
 # 45 / 30  => 1 * 30 + 15 => Feed 30 and 15 into next step
 # 30 / 15  => 2 * 15 + 0  => End algorithm because remainder = 0
 
-# Generally, this means we take the first number A, divided it by B a number of times, and get the remainder (A mod B <=> A%B). This is equivalent to A = (A//B)*B + A%B
+# Generally, this means we take the first number A, divided it by B a number of times, and get the remainder (A mod B <=> A%B). This is equivalent to A = (A//B)*B + A%B. We pull out the remainder, R, and the smaller number B. If A < B, then they do automatically reverse in the algorithm to make sure A > B.
 # For the algorithm, we are going to do a recursion. If the remainder is not zero, then we will repeat this step with B and the remainder.
 
 def gcd(A,B):
