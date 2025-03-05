@@ -1,0 +1,3 @@
+2 
+[6,8] "The missile defense system requires secure protocols" "Specific rules must be followed during the rescue mission" 
+[6,5] "The satellite must be launched into orbit tonight" "Their mission includes monitoring the robot movement"
