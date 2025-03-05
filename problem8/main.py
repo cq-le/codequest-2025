@@ -1,16 +1,21 @@
 import sys
 
+#Classes are useful when you want to keep track of state - it's not necessary to this problem but it makes it easier to reason with when things get complicated.
 class Robot:
     def __init__(self, x, y, direction):
+        #The __init__ method of a class provides meaningful state information of your object. It is the first method of a class when you construct the object, meaning we will need to provide the x, y, and direction when we create this robot.
+        #The self keyword allows you to modify only one particular instance of a robot instead of all robots.
         self.x = int(x)
         self.y = int(y)
         self.direction = direction
     
     def turn_left(self):
+        #These are methods of the robot - functions which, when called, do something to the robot. In this case, it is changing direction.
         self.direction = "N" if self.direction == "E" else\
                          "W" if self.direction == "N" else\
                          "S" if self.direction == "W" else\
                          "E" if self.direction == "S" else None
+        #Here we are using ternary conditionals to help us condense code. It essentially chains together a lot of conditionals in an alternate format to using if/elif/else.
     def turn_right(self):
         self.direction = "S" if self.direction == "E" else\
                          "E" if self.direction == "N" else\
