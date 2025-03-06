@@ -23,7 +23,7 @@ def main():
         data = sys.stdin.readline().rstrip()
         regex_pattern = '\[(\d+,\d+)\] \"(.+)\" \"(.+)\"'
         # This is a Regular Expression (regex) pattern. This pattern helps us capture data from a string by matching it to a pattern using this peculiar notation.
-        # When you see \ in front of a symbol, it means to take it literally as that character. \[ and \] therefore mean "Look for the symbols [ and ] exactly as they are not part of the regular expression."
+        # When you see \ in front of a symbol, it means to take it literally as that character. \[ and \] therefore mean "Look for the symbols [ and ] exactly as they are, not as part of the regular expression."
         # The (...) allows us to group patterns together for later lookup, called captures. In this case, our pattern looks like the following:
         # [(...)] "(...)" "(...)" - A capture within the brackets, a capture within two quotation marks, and another capture within two quotation marks.
         # Inside the brackets, the capture pattern is \d+,\d+
