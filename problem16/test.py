@@ -1,10 +1,10 @@
 from math import trunc
 
 for i in range(2, 100):
-    nines = int("9" * (i-1))
+    nines = int("9" * (i))
     divide = nines/i
     truncate = str(divide)[0:i-1]
-    stripped = truncate.lstrip("0").lstrip(".").lstrip("0")
+    stripped = truncate.lstrip("0").lstrip(".")
     print(stripped)
 
 # for i in range(1, 100):
