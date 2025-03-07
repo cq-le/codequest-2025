@@ -1,0 +1,16 @@
+2 
+4 5 
+ADD A B C 
+SHOW 
+ADD D
+SHOW 
+9 6 
+ADD a b c d 
+CONSUME 1 
+SHOW 
+CONSUME 4 
+SHOW 
+ADD e f g h i 
+SHOW 
+ADD j k l 
+SHOW
